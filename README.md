@@ -36,5 +36,8 @@ The site includes information on courses such as:
     JavaScript
     React (if applicable)
 
+# Loom
+    Link: https://www.loom.com/share/e0497d3e1fb648e5ade88fbb022ad24d?sid=869df679-e66e-4ec7-8691-2c0a13a5f8e3
+
 Copyright 2024 Faizan Khan
 All rights reserved.
