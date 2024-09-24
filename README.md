@@ -1,4 +1,4 @@
-Brooklyn College Math Department Website
+# Brooklyn College Math Department Website
 This project is a website for the Brooklyn College Mathematics Department, showcasing course offerings and faculty profiles.
 
 # Features
