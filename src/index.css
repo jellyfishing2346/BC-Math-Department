@@ -1,0 +1,149 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: maroon;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.faculty-profile {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.faculty-profile-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px; /* Adjust this value as needed */
+}
+
+.faculty-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px;
+}
+
+.faculty-profile h3 {
+  margin: 0 0 10px 0;
+  color: #FFD700;
+}
+
+.faculty-profile p {
+  margin: 5px 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.faculty-profile .email {
+  word-break: break-all;
+  font-size: 0.9em;
+}
+
+.profile-link, button, .course-button {
+  background-color: #FFD700;
+  color: #800000;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.profile-link:hover, button:hover, .course-button:hover {
+  background-color: #FFA500;
+}
+
+.profile-link:focus, button:focus, .course-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.profile-link:focus-visible, button:focus-visible, .course-button:focus-visible {
+  box-shadow: 0 0 0 2px #800000;
+}
+
+a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  
+  .faculty-profile {
+    background-color: #f0f0f0;
+  }
+  
+  .faculty-profile h3 {
+    color: #800000;
+  }
+  
+  .profile-link, button, .course-button {
+    background-color: #800000;
+    color: #ffffff;
+  }
+  
+  .profile-link:hover, button:hover, .course-button:hover {
+    background-color: #600000;
+  }
+  
+  a {
+    color: #800000;
+  }
+}
